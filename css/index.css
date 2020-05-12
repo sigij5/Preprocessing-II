@@ -332,6 +332,7 @@ header .intro {
 }
 .home .content-pick .destination .btn:hover {
   background-color: #00e6e6;
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .home .content-pick .destination .btn {
@@ -344,4 +345,63 @@ header .intro {
     font-size: 2rem;
     border-radius: 10%;
   }
+}
+.home .signup {
+  display: flex;
+}
+.home .signup form {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.home .signup form .input input {
+  margin-bottom: 5%;
+}
+.home .signup form .package {
+  margin-top: 2%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.home .signup form .package .submit,
+.home .signup form .package .select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .signup form .package .submit select,
+.home .signup form .package .select select {
+  width: 80%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10%;
+  background-color: #f1f1f1;
+  font-size: 1.5rem;
+}
+.home .signup form .package input {
+  display: flex;
+  justify-content: center;
+  background-color: teal;
+  width: 30%;
+  color: white;
+  padding: 3% 0%;
+  font-size: 2rem;
+  border-radius: 10%;
+  padding: 2%;
+}
+.home .signup form .package input:hover {
+  background-color: #00e6e6;
+  cursor: pointer;
+}
+.home .signup form div {
+  width: 50%;
+  margin-bottom: 3%;
+}
+.home .signup form div label {
+  font-size: 1.5rem;
+}
+.home .signup form div input {
+  padding: 1%;
+  width: 80%;
 }
