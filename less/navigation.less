@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+.nav(){
+    font-size:1.5rem;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar{
+    display: flex;
+    height:10vh;
+    .custom-border();
+    padding: 2.5% 12.5%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    nav{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+
+        @media @mobile {
+            width:100%;
+        }
+    
+
+        a{
+            .nav();
+
+            &:hover {
+                color: lighten(black, 50%)
+            }
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

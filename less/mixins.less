@@ -1,1 +1,18 @@
 // Mixins in here
+
+@mobile: ~'(max-width:500px)';
+
+.custom-button(@backgroundColor, @width, @color){
+    display: flex;
+    justify-content: center;
+    background-color: @backgroundColor;
+    width: @width;
+    color: @color;
+    padding: 3% 0%;
+    font-size: 2rem;
+    border-radius: 10%;
+}
+
+.custom-border(@width:100%, @color:@navigation-border){
+    border-bottom: 2px dashed @color;
+}
