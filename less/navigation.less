@@ -1,4 +1,5 @@
 // Navigation Styles here
+
 .nav(){
     font-size:1.5rem;
     text-align:center;
@@ -10,21 +11,33 @@
 .navbar{
     display: flex;
     height:10vh;
-    border-bottom: 2px dashed @navigation-border;
+    .custom-border();
     padding: 2.5% 12.5%;
     justify-content: space-between;
     align-items: flex-end;
-    
+
     nav{
         display: flex;
         width: 30%;
-        // border:1px solid red;
         justify-content: space-between;
 
-        a{
-            // border:1px solid hotpink;
-            .nav();
+        @media @mobile {
+            width:100%;
         }
+    
+
+        a{
+            .nav();
+
+            &:hover {
+                color: lighten(black, 50%)
+            }
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
